@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your Music Partner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="brand"><img src="logo.png" alt="spotify" srcset="">Spotify</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="list">
+            <h1>Trending Now</h1>
+            <div class="songList">
+                <div class="songItem">
+                    <img src="cover1.jpg" alt="1" class="cover">
+                    <span class="text">Zajal Labanese Remix</span>
+                    
+                    <span class="slplay"><span class="time">2:00</span><i class="fa-solid fa-play s1 splay"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover1.jpg" alt="1" class="cover">
+                    <span class="text">Zajal Labanese Remix</span>
+                    
+                    <span class="slplay"><span class="time">2:00</span><i class="fa-solid fa-play s1 splay"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover1.jpg" alt="1" class="cover">
+                    <span class="text">Zajal Labanese Remix</span>
+                    
+                    <span class="slplay"><span class="time">2:00</span><i class="fa-solid fa-play s1 splay"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover1.jpg" alt="1" class="cover">
+                    <span class="text">Zajal Labanese Remix</span>
+                    
+                    <span class="slplay"><span class="time">2:00</span><i class="fa-solid fa-play s1 splay"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="banner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" value="0" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <!-- FontAwesome Icons -->
+            <i class="fa-solid fa-backward-fast s3" id="previous"></i>
+            <i class="fa-regular fa-circle-play s4" id="masterplay"></i>
+            <i class="fa-solid fa-forward-fast s3" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <div class="songin"><span class="songNB">Zajal Labanese Remix</span><img src="play.gif" id="gif" width="40px" alt="Song Info"></div>
+            <div class="icon"><span class="vol"><i class="fa-solid fa-volume-high s1" id="volume"><input type="range" name="" id="volBar" min="0" max="100" value="100"></i></span></div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ec2fd4a1e8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

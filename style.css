@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Chelsea+Market&family=Rum+Raisin&family=Ubuntu&family=Ysabeau+Infant&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: rgb(41 43 41);
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(34, 33, 33);
+    height: 6vh;
+}
+
+.navbar>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar>ul>li {
+    list-style: none;
+    padding: 0 12px;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: color 0.5s;
+}
+
+.navbar>ul>li>a:hover {
+    color: #1ed760;
+}
+
+.navbar img {
+    width: 50px;
+    margin: 0 8px;
+    background-color: rgb(34, 33, 33);
+}
+
+.brand {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    user-select: none;
+    transition: all .5s ease-in-out;
+}
+.brand:hover{
+    color: #1ed760;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 22px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background: url('bg.jpg')no-repeat center center/cover;
+}
+
+.list {
+    border-right: 2px solid white;
+    width: 38%;
+}
+
+.list>h1 {
+    user-select: none;
+    color: #1ed760;
+    text-align: center;
+}
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: rgb(20, 20, 20);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.bottom:hover {
+    width: 88%;
+}
+
+.s3 {
+    font-size: 2.5em;
+    transition: color 0.5s;
+}
+
+.s1 {
+    font-size: 1.5em;
+    transition: color 0.5s;
+}
+
+.s4 {
+    font-size: 3.5em;
+    transition: color 0.5s;
+}
+
+.s3:hover {
+    color: grey;
+}
+
+.s1:hover {
+    color: #1ed760;
+}
+
+.s4:hover {
+    color: grey;
+}
+
+.icons {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    /* box-sizing: border-box;
+    transition: all 1s ease-in; */
+}
+.songList{
+    margin-top: 50px;
+}
+.songItem {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 0;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(41, 41, 41);
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.songItem>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.text {
+    box-sizing: border-box;
+    padding-left: 10px;
+    user-select: none;
+}
+
+.time {
+    margin-right: 20px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+.slplay {
+    display: flex;
+    align-items: center;
+}
+
+.slplay i {
+    cursor: pointer;
+}
+.songInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 5vw;
+}
+#volume{
+    cursor: pointer;
+}
+/* .volume:hover~
+#volBar{
+    display: inline;
+    width: 55%;
+} */
+#volBar{
+    width: 0;
+    display: none;
+    margin-left: 5px;
+    transition: width 0.5s;
+    cursor: pointer;
+}
+#volBar:hover{
+    width: 55%;
+    display: inline;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.songin{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icon{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.songInfo .songin>span{
+margin-right: 10px;
+}
+.songInfo .songin>img{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+@media (max-width: 1100px) {
+    .list{
+        width: 50%;
+    }
+}
+@media (max-width: 850px) {
+    .banner{
+        width: 0;
+        display: none;
+    }
+    .list{
+        width: 100%;
+        border: none;
+    }
+    .songInfo{
+        left: 3vw;
+        margin-top: 10px;
+    }
+    .s1{
+        font-size: 1em;
+    }
+    .s3{
+        font-size: 2em;
+    }
+    .s4{
+        font-size: 2.5em;
+    }
+    .icons i {
+        cursor: pointer;
+        margin: 0 5px;
+    }
+}
+@media (max-width: 600px) {
+    .banner{
+        width: 0;
+        display: none;
+    }
+    .list{
+        width: 100%;
+        border: none;
+    }
+    #myProgressBar{
+        width: 50%;
+        position: absolute;
+        top: 5px;
+    }
+    .songInfo{
+        left: 3vw;
+        bottom: 10px;
+    }
+    .songInfo .songin>span{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .icons{
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+    }
+    .bottom{
+        height: 80px;
+        justify-content: space-between;
+    }
+    .icon{
+        margin-top: 5px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .cover{
+        width: 40px;
+        height: 40px;
+    }
+}
